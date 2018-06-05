@@ -1,4 +1,4 @@
-![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.png)
+![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.jpg)
 
 # FashionAI_Tianchi_2018
 ---
