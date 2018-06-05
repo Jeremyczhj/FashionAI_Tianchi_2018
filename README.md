@@ -22,8 +22,8 @@
 ### 思路分享
 * 迁移学习+多任务学习+模型融合
 * 分别设计了两个多任务模型结构如下：
->>长度类别多输出模型：
+      长度类别多输出模型：
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/1.png)
->>领子类别多输出模型：
+      领子类别多输出模型：
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/2.png)
       
