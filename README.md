@@ -1,8 +1,7 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.jpg)
-
-# FashionAI_Tianchi_2018
 ---
-##### 天池大数据竞赛中的FashionAI全球挑战赛—服饰属性标签识别，记录一下在比赛过程中踩过的坑，比赛最终成绩为21名
+* 天池大数据竞赛——FashionAI全球挑战赛—服饰属性标签识别
+* 记录一下在比赛过程中踩过的坑，比赛最终成绩为决赛21名
 ---
 ### 环境
 * ubuntu16.04
