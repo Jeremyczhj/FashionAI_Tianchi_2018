@@ -26,4 +26,7 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/1.png)
       领子类别多输出模型：
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/2.png)
+* 列表一
+    * 列表二
+        *列表三
       
