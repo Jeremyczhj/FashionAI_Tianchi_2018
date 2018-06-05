@@ -17,7 +17,7 @@
 ### 使用
 * 因为懒，代码写完就跑，跑完就算，没封装得多好
 * config.py-------------配置了样本目录等信息
-* cal_std_mean.py-------计算数据集的std与mean
+* cal_std_mean.py------计算数据集的std与mean
 * Multitask_train.py----训练脚本
 * Multitask_predict-----预测脚本
 * dataset.py------------数据预处理
