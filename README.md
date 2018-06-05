@@ -1,2 +1,2 @@
-# FashionAI_Tianchi_2018
+# FashionAI全球挑战赛—服饰属性标签识别-21名解决方案
 ---
