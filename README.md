@@ -28,6 +28,16 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/1.png)
     * 领子类别多输出模型：
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/2.png)
+* 融合Inceptionv4与Inceptionresnetv2，分别进行预测再对结果做平均
+* 对测试集样本进行增广
 
-###
+### 提高分数的技巧
+* shuffle
+* 合适的图像增广，推荐使用imgaug，功能强大
+* 图像标准化，计算本数据集的std与mean，而不是直接用imagenet的std与mean
+* finetune，算力允许的前提下finetune整个模型
+* 使用Adam先快速收敛，再用SGD慢慢调效率会比较高
+* 模型融合
+* 对测试集进行增广，本例选择了镜像，加上旋转5、10、15度进行预测，最后再取平均。
+
       
