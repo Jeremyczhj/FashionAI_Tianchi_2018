@@ -31,9 +31,8 @@
     * 长度类别多输出模型：
 
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/1.png)
-
     * 领子类别多输出模型：
-
+    
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/2.png)
 * 融合Inceptionv4与Inceptionresnetv2，分别进行预测再对结果做平均
 * 对测试集样本进行增广
