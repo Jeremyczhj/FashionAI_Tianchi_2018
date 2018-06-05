@@ -1,7 +1,6 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.jpg)
 ---
 * 天池大数据竞赛——FashionAI全球挑战赛—服饰属性标签识别
-* FashionAI Global Challenge—Attributes Recognition of Apparel
 * 记录一下在比赛过程中踩过的坑，比赛最终成绩为决赛21名
 * [FashionAI全球挑战赛官方链接，数据集可在此下载](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.11409391.333.4.7cb749fenAbYGF&raceId=231649 "悬停显示")
 * [我的CSDN链接](https://blog.csdn.net/jeremyczh/article/details/80571294 "悬停显示")
@@ -22,6 +21,8 @@
 * dataset.py——数据预处理脚本
 * cal_std_mean.py——计算数据集的std与mean
 * inceptionv4.py——模型API
+* 来[这里](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.686b6561aZJ1xi&raceId=231649 "悬停显示")下载数据集，解压到datasets文件夹下，就可以python Multitask_train.py进行训练了
+
 
 ### 思路分享
 * 迁移学习+多任务学习+模型融合
