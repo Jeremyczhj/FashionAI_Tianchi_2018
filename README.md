@@ -16,12 +16,12 @@
 
 ### 使用
 * 因为懒，代码写完就跑，跑完就算，没封装得多好
-* config.py             ——配置了样本目录等信息
-* cal_std_mean.py       ——计算数据集的std与mean
-* Multitask_train.py    ——训练脚本
-* Multitask_predict     ——预测脚本
-* dataset.py            ——数据预处理
-* inceptionv4.py        ——Inceptionv4模型API
+* config.py———————————————配置了样本目录等信息
+* cal_std_mean.py—————————计算数据集的std与mean
+* Multitask_train.py——————训练脚本
+* Multitask_predict———————预测脚本
+* dataset.py——————————————数据预处理
+* inceptionv4.py——————————Inceptionv4模型API
 * 来[这里](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.686b6561aZJ1xi&raceId=231649 "悬停显示")下载数据集，解压到datasets文件夹下，就可以执行python Multitask_train.py进行训练了
 
 
