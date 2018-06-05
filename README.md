@@ -3,7 +3,8 @@
 * 天池大数据竞赛——FashionAI全球挑战赛—服饰属性标签识别
 * FashionAI Global Challenge—Attributes Recognition of Apparel
 * 记录一下在比赛过程中踩过的坑，比赛最终成绩为决赛21名
-* [比赛链接](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.11409391.333.4.7cb749fenAbYGF&raceId=231649 "悬停显示")
+* [FashionAI全球挑战赛官方链接，数据集可在此下载](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.11409391.333.4.7cb749fenAbYGF&raceId=231649 "悬停显示")
+* [我的博客](https://blog.csdn.net/jeremyczh/article/details/80571294 "悬停显示")
 ---
 ### 环境
 * ubuntu16.04/windows10
