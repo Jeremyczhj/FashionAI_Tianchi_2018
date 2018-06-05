@@ -1,10 +1,11 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.jpg)
 ---
 * 天池大数据竞赛——FashionAI全球挑战赛—服饰属性标签识别
+* FashionAI Global Challenge—Attributes Recognition of Apparel
 * 记录一下在比赛过程中踩过的坑，比赛最终成绩为决赛21名
 ---
 ### 环境
-* ubuntu16.04
+* ubuntu16.04/windows10
 * python 3.6.2
 * keras 2.1.6
 * tensroflow 1.8.0
@@ -13,7 +14,7 @@
 
 ### 使用
 * 因为懒，代码写完就跑，没封装得多好
-* config.py配置了样本目录等信息
+* config.py——配置了样本目录等信息
 * Multitask_train.py——训练脚本
 * Multitask_predict——预测脚本
 * dataset.py——数据预处理脚本
