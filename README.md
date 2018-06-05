@@ -22,5 +22,5 @@
 ### 思路分享
 * 迁移学习+多任务学习+模型融合
 * 设计的多任务学习模型结构如下
-![](https://img-blog.csdn.net/20180604230428883?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0plcmVteUN6aA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/1.png)
       
