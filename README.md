@@ -1,7 +1,7 @@
 ![](https://github.com/Jeremyczhj/FashionAI_Tianchi_2018/blob/master/datasets/3.jpg)
 ---
 * 天池大数据竞赛——FashionAI全球挑战赛—服饰属性标签识别
-* 记录一下在比赛过程中踩过的坑，比赛最终成绩为决赛21名
+* 采用多任务学习的策略，比赛最终成绩为决赛21名，在此记录一下在比赛过程中踩过的坑
 * [FashionAI全球挑战赛官方链接，数据集可在此下载](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.11409391.333.4.7cb749fenAbYGF&raceId=231649 "悬停显示")
 * [我的CSDN链接](https://blog.csdn.net/jeremyczh/article/details/80571294 "悬停显示")
 * `transfer learning`  `multitasks learning`  `keras`  `FashionAI`  `Tianchi big data`
@@ -37,6 +37,7 @@
 
 ### 提高分数的技巧
 * shuffle很重要
+* 多任务学习比单任务学习成绩提高`1-2%`
 * 合适的图像增广，推荐使用imgaug，功能强大。dataset.py有详细代码，能提高`2-3%`
 * 图像标准化，计算本数据集的std与mean，而不是直接用imagenet的std与mean，提高`0.5-1%`
 * 增大图像输入尺寸可提高分类准确率，提高`1-2%`
