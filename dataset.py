@@ -4,6 +4,7 @@ import cv2
 from tqdm import tqdm
 from config import *
 
+# rotate images
 def rotate(image, angle, center=None, scale=1.0):
     (h, w) = image.shape[:2]
     if center is None:
@@ -12,6 +13,7 @@ def rotate(image, angle, center=None, scale=1.0):
     rotated = cv2.warpAffine(image, M, (w, h))
     return rotated
 
+# load and preprocess images
 def process(aug,model,width,fnames_test,n_test):
     X_test = np.zeros((n_test, width, width, 3), dtype=np.uint8)
 
@@ -95,7 +97,7 @@ def process(aug,model,width,fnames_test,n_test):
     del X_test
     return y_pred
 
-
+# data augmentation
 def customizedImgAug(input_img):
     rarely = lambda aug: iaa.Sometimes(0.1, aug)
     sometimes = lambda aug: iaa.Sometimes(0.25, aug)
@@ -159,7 +161,7 @@ def customizedImgAug(input_img):
     output_img = seq.augment_image(input_img)
     return output_img
 
-
+# generate data
 class Generator():
     def __init__(self, X, y, batch_size=8, aug=False):
         def generator():
