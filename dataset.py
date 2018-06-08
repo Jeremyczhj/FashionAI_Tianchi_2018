@@ -173,4 +173,4 @@ class Generator():
                     yield X_batch, y_barch
 
         self.generator = generator()
-        self.steps = len(X) // batch_size + 1
+        self.steps = len(X) // batch_size + 1 
