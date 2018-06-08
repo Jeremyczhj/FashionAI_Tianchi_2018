@@ -1,6 +1,8 @@
 import os
+# 2 gpus
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
+# path to train and test labels
 TRAIN_LABEL_DIR = 'datasets/train/Annotations/label.csv'
 TEST_LABEL_DIR = 'datasets/final-rank/Tests/question.csv'
 
@@ -9,9 +11,11 @@ TRAIN_DESIGN_LABEL_DIR = 'labels/design.csv'
 TEST_DESIGN_LABEL_DIR = 'labels/test_design.csv'
 TEST_LENGTH_LABEL_DIR = 'labels/test_length.csv'
 
+# path to train and test images
 TRAIN_IMG_DIR = 'datasets/train/'
 TEST_IMG_DIR =  'datasets/final-rank/'
 
+# path to trianed models
 MODEL_LENGTH_INCEPTIONV4 =  'models/length_inceptionv4_480_12.h5'
 MODEL_LENGTH_INCEPTIONRESNETV2 = 'models/length_inceptionresnet_480_12.h5'
 MODEL_DESIGN_INCEPTIONV4 = 'models/design_inceptionv4_480_13.h5'
@@ -32,5 +36,6 @@ task_list_design = {
     'neck_design': 5,
 }
 
+# input size
 width = 480
 model_name = 'inceptionv4'
