@@ -9,6 +9,7 @@ import inception_v4
 from dataset import *
 from config import *
 
+# load data into memory
 def getX():
     X = np.zeros((n, width, width, 3), dtype=np.uint8)
     for i in tqdm(range(n)):
@@ -16,6 +17,7 @@ def getX():
         X[i] = img[:, :, ::-1]
     return X
 
+# calculate the accuracy on validation set
 def acc(y_true, y_pred):
     index = tf.reduce_any(y_true > 0.5, axis=-1)
     res = tf.equal(tf.argmax(y_true, axis=-1), tf.argmax(y_pred, axis=-1))
@@ -38,7 +40,6 @@ def train(task):
         y[label_names.index(label_name)][i, label.find('y')] = 1
 
     X = getX()
-    print(X.shape)
     n_train = int(n * 0.9)
     X_train = X[:n_train]
     X_valid = X[n_train:]
@@ -80,6 +81,7 @@ def train(task):
     del model
     gc.collect()
 
+# load the label file and split it into two portions
 def csv_loader():
     df_test = pd.read_csv(TRAIN_LABEL_DIR, header=None)
     df_test.columns = ['filename', 'label_name', 'label']
@@ -91,9 +93,6 @@ def csv_loader():
                           | (df_test.label_name == 'neckline_design_labels') | (df_test.label_name == 'neck_design_labels')]
     df_test_length.to_csv(TRAIN_LENGTH_LABEL_DIR, index=False, header=None)
     df_test_design.to_csv(TRAIN_DESIGN_LABEL_DIR, index=False, header=None)
-
-
-
 
 
 if __name__ == "__main__":
