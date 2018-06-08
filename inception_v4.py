@@ -301,4 +301,4 @@ def inception_v4(num_classes, dropout_keep_prob, weights, include_top,width):
 
 
 def create_model(num_classes=1001, dropout_prob=0.2, weights=None, include_top=True,width=299):
-    return inception_v4(num_classes, dropout_prob, weights, include_top,width)
+    return inception_v4(num_classes, dropout_prob, weights, include_top,width) 
