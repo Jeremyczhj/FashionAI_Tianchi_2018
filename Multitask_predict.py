@@ -9,7 +9,6 @@ from keras.applications import *
 from dataset import *
 from config import *
 
-
 def predict(task):
 
     if(task=='design'):
@@ -21,7 +20,8 @@ def predict(task):
         model1_path = MODEL_LENGTH_INCEPTIONV4
         model2_path = MODEL_LENGTH_INCEPTIONRESNETV2
     label_names = list(task_list.keys())
-
+    
+    # load model 1
     base_model = inception_v4.create_model(weights='imagenet', include_top=False, width=width)
     input_tensor = Input((width, width, 3))
     x = input_tensor
@@ -39,7 +39,7 @@ def predict(task):
 
     del model1,base_model,x,input_tensor
 
-
+    # load model 2
     base_model2 = InceptionResNetV2(weights='imagenet',input_shape=(width, width, 3),include_top=False)
     input_tensor2 = Input((width, width, 3))
     x2 = input_tensor2
@@ -54,7 +54,8 @@ def predict(task):
 
     y_pred21 = process('default', model2, width, fnames_test, n_test)
     y_pred22 = process('flip', model2, width, fnames_test, n_test)
-
+    
+    # ensemble two models
     for i in range(n_test):
         problem_name = df_test.label_name[i].replace('_labels', '')
         problem_index = label_names.index(problem_name)
@@ -66,12 +67,14 @@ def predict(task):
         probs1 = probs11 + probs12
         probs2 = probs21 + probs22
 
-        probs1 = (probs1 )/2
-        probs2 = (probs2) / 2
+        probs1 = probs1 / 2
+        probs2 = probs2 / 2
 
         probs = 0.5*probs1+0.5*probs2
 
         df_test.label[i] = ';'.join(np.char.mod('%.8f', probs))
+    
+    # write csv files
     fname_csv = 'result/%s.csv' % (task)
     df_test.to_csv(fname_csv, index=None, header=None)
 
