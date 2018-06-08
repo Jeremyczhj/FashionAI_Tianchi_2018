@@ -13,7 +13,6 @@ def get_files(dir):
         result += get_files(sub_path)
     return result
 
-
 r = 0  # r mean
 g = 0  # g mean
 b = 0  # b mean
