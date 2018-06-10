@@ -22,7 +22,7 @@
 * Multitask_predict-----预测脚本
 * dataset.py------------数据预处理
 * inceptionv4.py--------Inceptionv4模型API
-* `来[这里](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.686b6561aZJ1xi&raceId=231649 "悬停显示")下载数据集，解压到datasets文件夹下，就可以执行python Multitask_train.py进行训练了`
+* 来[这里](https://tianchi.aliyun.com/competition/information.htm?spm=5176.100067.5678.2.686b6561aZJ1xi&raceId=231649 "悬停显示")下载数据集，解压到datasets文件夹下，就可以执行`python Multitask_train.py`进行训练了
 
 
 ### 思路分享
